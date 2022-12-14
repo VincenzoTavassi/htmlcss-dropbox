@@ -1,6 +1,6 @@
 /* Utils */
 
-.container {
+.small-container {
 	max-width: 1000px;
 	margin: 0 auto;
 }
@@ -24,4 +24,16 @@
 
 .m1 {
 	margin: 1rem 0;
+}
+
+.m2 {
+	margin: 2rem 0;
+}
+
+.m3 {
+	margin: 3rem 0;
+}
+
+strong {
+	font-weight: bolder;
 }
