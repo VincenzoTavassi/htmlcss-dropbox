@@ -1,7 +1,7 @@
 /* Utils */
 
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -9,4 +9,19 @@
 	content: '';
 	clear: both;
 	display: table;
+}
+
+.big-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Spaziature */
+
+.standard {
+	line-height: 1.25rem;
+}
+
+.m1 {
+	margin: 1rem 0;
 }

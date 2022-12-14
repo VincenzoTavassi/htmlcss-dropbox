@@ -23,7 +23,6 @@ header a {
     justify-content: space-between;
     align-items: center;
     height: 9vh;
-    border: 1px solid black;
 }
 
 .header-menu {
@@ -39,4 +38,42 @@ header a {
     background-color: #0061FF;
     color: white;
     padding: 10px 15px;
+    width: fit-content;
+}
+
+/* Hero Section */
+
+#hero {
+    background-color: #B4D0E7;
+    min-height: 70%;
+}
+
+h1 {
+    font-size: 5rem;
+    padding-top: 5rem;
+    font-weight: bolder;
+}
+
+#hero-img {
+    object-fit: contain;
+}
+
+#arrow {
+    /* debug  */
+    font-size: 50px;
+    padding-top: 5rem;
+}
+
+.flex-container {
+    display: flex;
+    position: relative;
+    top: 4rem;
+}
+
+.big-col {
+    width: 70%;
+}
+
+.small-col {
+    width: 30%;
 }
