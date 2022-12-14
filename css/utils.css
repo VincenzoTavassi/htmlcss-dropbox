@@ -16,6 +16,24 @@
 	margin: 0 auto;
 }
 
+.column-container {
+	margin: 1rem;
+}
+
+.big-col {
+	width: 60%;
+}
+
+.small-col {
+	width: 40%;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 /* Spaziature */
 
 .standard {
@@ -33,6 +51,30 @@
 .m3 {
 	margin: 3rem 0;
 }
+
+/* Bottoni */
+
+.btn {
+	background-color: var(--primary);
+	color: white;
+	padding: 10px 15px;
+	width: fit-content;
+}
+
+.btn.neutro {
+	background-color: inherit;
+	color: inherit;
+	border: 1px solid gray;
+}
+
+.btn.bianco {
+	background-color: white;
+	color: inherit;
+	padding: 1rem 2.5rem;
+}
+
+
+/* Font */
 
 strong {
 	font-weight: bolder;
