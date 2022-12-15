@@ -16,10 +16,6 @@
 	margin: 0 auto;
 }
 
-.column-container {
-	margin: 1rem;
-}
-
 .big-col {
 	width: 60%;
 }
@@ -39,10 +35,18 @@
 	flex-direction: column;
 }
 
+.align-end {
+	align-items: end;
+}
+
 /* Spaziature */
 
 .standard {
 	line-height: 1.25rem;
+}
+
+.m1a {
+	margin: 1rem;
 }
 
 .m1 {

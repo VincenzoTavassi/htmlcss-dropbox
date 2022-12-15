@@ -11,7 +11,7 @@ body {
 
 section {
 
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
 }
 
 ul {
@@ -126,9 +126,7 @@ h1 {
 
     margin-top: 6rem;
     padding-top: 100px;
-    /* debug     */
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+
 }
 
 .plans-list-icons {
@@ -173,7 +171,7 @@ h1 {
     justify-content: center;
 }
 
-#plans .column-container hr {
+#plans hr {
     width: 20%;
     margin: 2rem 0;
     color: lightgray;
@@ -221,6 +219,10 @@ h1 {
 #plans .btn {
     margin: 2rem auto;
     padding: 10px 20px;
+}
+
+#plans .btn.btn-enterprise {
+    margin: 0;
 }
 
 /* Partner */
@@ -320,6 +322,8 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* Join Dropbox */
+
 .join-dropbox {
     background-color: #B4D0E7;
 }
@@ -334,7 +338,7 @@ h1 {
 }
 
 .join-dropbox .big-col {
-    padding: 0 1rem;
+    padding-right: 2rem;
 }
 
 .join-dropbox h2 {
