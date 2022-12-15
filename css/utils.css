@@ -34,6 +34,11 @@
 	flex-wrap: wrap;
 }
 
+.vertical-col {
+	display: flex;
+	flex-direction: column;
+}
+
 /* Spaziature */
 
 .standard {
@@ -59,12 +64,23 @@
 	color: white;
 	padding: 10px 15px;
 	width: fit-content;
+	border: 1px solid transparent;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	filter: brightness(120%);
 }
 
 .btn.neutro {
 	background-color: inherit;
 	color: inherit;
 	border: 1px solid gray;
+}
+
+.btn.neutro:hover {
+	color: grey;
+
 }
 
 .btn.bianco {
@@ -78,4 +94,12 @@
 
 strong {
 	font-weight: bolder;
+}
+
+.brand-color {
+	color: var(--primary);
+}
+
+.f1 {
+	font-size: 1rem;
 }

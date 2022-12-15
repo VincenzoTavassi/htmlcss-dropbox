@@ -29,6 +29,11 @@ h3 {
     margin-bottom: 1rem;
 }
 
+a.btn {
+    text-decoration: none;
+    display: block;
+}
+
 /* Header */
 
 header a {
@@ -38,11 +43,13 @@ header a {
 
 .header-links {
     background: white;
-    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9vh;
+    min-height: 80px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .header-menu {
@@ -51,15 +58,40 @@ header a {
 }
 
 .header-menu>li {
-    margin: 20px;
+    margin: 0 20px;
+}
+
+#logo>img {
+    vertical-align: middle;
+}
+
+.header-menu>li>a:hover {
+    box-shadow: 0px 3px #333;
+}
+
+#logo:hover {
+    box-shadow: none;
+}
+
+.header-menu>li>a {
+    display: inline-block;
+    line-height: 80px;
 }
 
 /* Hero Section */
-/* Dubbi su: la soluzione per far debordare l'immagine è corretta? Come poteva essere migliorata? La soluzione per la arrow è corretta? Quando si restringe lo schermo si rompe.. */
 
 #hero {
     background-color: #B4D0E7;
     min-height: 70%;
+    padding-top: 100px;
+}
+
+#hero .big-col {
+    width: 70%;
+}
+
+#hero .small-col {
+    width: 30%;
 }
 
 h1 {
@@ -72,13 +104,16 @@ h1 {
     object-fit: contain;
 }
 
+
 #arrow {
     /* debug  */
     font-size: 50px;
-    padding-top: 4rem;
+    color: black;
+    margin-top: auto;
+    margin-bottom: 5rem;
 }
 
-.flex-container {
+.hero-flex {
     display: flex;
     position: relative;
     top: 4rem;
@@ -87,12 +122,28 @@ h1 {
 /* Plans */
 /* In che modo avrei potuto centrare verticalmente il testo dopo i checkbox senza flex? */
 
-.plans {
+#plans {
 
     margin-top: 6rem;
+    padding-top: 100px;
     /* debug     */
     margin-bottom: 50px;
     padding-bottom: 50px;
+}
+
+.plans-list-icons {
+    width: 8%;
+    font-size: 0.8rem;
+}
+
+.plans-list-content {
+    width: 92%;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+}
+
+#plans li.row {
+    align-items: flex-start;
 }
 
 .plans-option {
@@ -122,7 +173,7 @@ h1 {
     justify-content: center;
 }
 
-.plans .column-container hr {
+#plans .column-container hr {
     width: 20%;
     margin: 2rem 0;
     color: lightgray;
@@ -141,17 +192,17 @@ h1 {
     text-align: center;
 }
 
-.plans h4 {
+#plans h4 {
     font-size: .9rem;
     font-weight: bold;
     margin-top: 2rem;
 }
 
-.plans ul {
+#plans ul {
     margin: 2rem 0;
 }
 
-.plans ul li {
+#plans ul li {
     margin-top: 1rem;
 }
 
@@ -167,7 +218,7 @@ h1 {
     text-align: center;
 }
 
-.plans .btn {
+#plans .btn {
     margin: 2rem auto;
     padding: 10px 20px;
 }
@@ -206,18 +257,18 @@ h1 {
     background-color: lightcoral;
     width: 50%;
     text-align: center;
-    padding: 5rem;
+    height: calc(100vw / 3 / 2);
     justify-content: center;
+}
+
+.company>img {
+    width: 50%;
+    filter: invert();
 }
 
 .testimonials-section {
 
     background-color: #F5F5F5;
-}
-
-.testimonials-section .row {
-    min-height: 18rem;
-
 }
 
 .company.brown {
@@ -271,12 +322,14 @@ h1 {
 
 .join-dropbox {
     background-color: #B4D0E7;
-    padding: 2rem;
+}
+
+.join-dropbox .row {
+    min-height: 35vh;
 }
 
 .join-dropbox .small-col {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
@@ -289,17 +342,73 @@ h1 {
     color: #61082B;
 }
 
+/* Domande Frequenti */
+/* Qui non mi funzionava il selettore :first-child per details quindi ho dovuto usare :first-of-type*/
+
 .faq details {
-    line-height: 5rem;
+    line-height: 7rem;
     border-bottom: 1px solid gray;
-    position: relative;
 }
 
-.faq details :first-child {
+.show-answer {
+    display: none;
+}
+
+.faq details:hover .show-answer {
+    display: block;
+}
+
+.faq details:first-of-type {
     border-top: 1px solid gray;
     margin-top: 3rem;
 }
 
 .faq summary {
     font-weight: bolder;
+    list-style: none;
+    position: relative;
+}
+
+.faq summary::after {
+    content: '\25BC';
+    position: absolute;
+    right: 1rem;
+
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-col ul li {
+    margin: 1rem 0;
+}
+
+footer hr {
+    width: 70%;
+    margin: 5rem 0 3rem 0;
+}
+
+footer #language {
+    color: gray;
 }
