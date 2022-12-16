@@ -242,11 +242,12 @@ h1 {
 
 .operazioni .row {
     gap: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 12rem;
 }
 
 .operazioni p {
     line-height: 1.5rem;
+    font-size: 1.05rem;
 }
 
 /* Testimonials */
