@@ -120,7 +120,6 @@ h1 {
 }
 
 /* Plans */
-/* In che modo avrei potuto centrare verticalmente il testo dopo i checkbox senza flex? */
 
 #plans {
 
@@ -145,9 +144,12 @@ h1 {
 }
 
 .plans-option {
-    display: inline-flex;
-    margin: 2rem 5rem 0 0;
-    align-items: center;
+    margin: 4rem 5rem 0 0;
+}
+
+.plans-option span {
+    margin-right: 5rem;
+    vertical-align: middle;
 }
 
 .checkbox {
@@ -155,8 +157,9 @@ h1 {
     height: 1.3rem;
     width: 1.3rem;
     border: 2px solid lightgray;
-    display: inline-block;
     margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .checkbox.active {
